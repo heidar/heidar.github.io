@@ -14,6 +14,16 @@
 //$footer-bg-front: image-url('noise.png');
 //$footer-bg-back: linear-gradient(lighten($footer-bg, 8), $footer-bg, darken($footer-bg, 11));
 
+$noise-bg: #f2f2f2;
+$nav-bg: #f2f2f2;
+$nav-bg-front: #f2f2f2;
+$sidebar-bg: #f2f2f2;
+$sidebar-border: #e4e4e4;
+$nav-bg-front: #f2f2f2;
+$page-bg: #f8f8f8;
+$main-bg: #f8f8f8;
+$nav-color: #424854;
+$nav-color-hover: #0181eb;
 
 /* To use the light Solarized highlighting theme uncomment the following line */
 //$solarized: light;
@@ -35,7 +45,6 @@
 //$solar-blue:      #268bd2;
 //$solar-cyan:      #2aa198;
 //$solar-green:     #859900;
-
 
 /* Non highlighted code colors */
 //$pre-bg: $base03;
