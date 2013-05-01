@@ -1,31 +1,34 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 
-$border-main: #e4e4e4;
-
-#main {
-  border-left: 1px solid $border-main;
-  border-right: 1px solid $border-main;
-  border-bottom: 1px solid $border-main;
+html {
+  background-color: #f8f8f8;
 }
 
-body > header {
-  display: none;
+body { 
+  > header {
+    display: none;
+  }
+
+  > footer {
+    background: transparent;
+  }
 }
+
+$border: #e4e4e4;
 
 body > nav {
-  border: solid 1px $border-main;
-  border-bottom: solid 1px #b2b2b2;
+  border-left: 1px solid $border;
+  border-right: 1px solid $border;
+  border-top: 1px solid $border;
+}
+
+#main {
+  background: #f2f2f2;
+  border-left: 1px solid $border;
+  border-right: 1px solid $border;
 }
 
 #content {
   background: #f8f8f8;
-
-  .sidebar {
-    background: #f2f2f2;
-  }
-}
-
-body > footer {
-  background: transparent;
 }
