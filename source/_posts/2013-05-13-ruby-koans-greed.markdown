@@ -46,9 +46,9 @@ def score(dice)
 end
 ```
 
-Instead of populating the hash the normal way I decided to use
-`Enumerable#inject`. I quite like this method although it seemed a bit strange
-at first. But after understanding it, it becomes very readable.
+Instead of populating the hash I decided to loop from one to six (each possible
+number) and get its count from the array. This saves work and memory since
+creating a hash is unnecessary.
 
 The second thing I did was to use postconditions where possible. I love them,
 they can shorten code very easily without losing much readability.
@@ -59,19 +59,20 @@ much easier to implement.
 
 ``` ruby After refactoring, much better
 def score(dice)
-  results = dice.inject(Hash.new(0)) { |hash, n| hash[n] += 1; hash }
-  
-  points = 0
-  results.each do |number, occurences|
+  score = 0
+
+  1.upto(6) do |i|
+    occurences = dice.count(i)
     if occurences >= 3
-      points += 1000 if number == 1
-      points += number * 100 if number != 1
-      results[number] -= 3
+      score += i == 1 ? 1000 : i * 100
+      occurences -= 3
     end
+
+    score += occurences * 100 if i == 1
+    score += occurences * 50 if i == 5
   end
 
-  points += results[1] * 100
-  points += results[5] * 50
+  return score
 end
 ```
 
