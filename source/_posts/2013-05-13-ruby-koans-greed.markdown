@@ -8,8 +8,11 @@ categories: Ruby
 I decided to revisit the Ruby Koans and practice my refactoring skills.
 [The Koan](http://koans.heroku.com/about_scoring_project) about the dice game
 called Greed was a good one to refactor because I did it in a hurry and
-just implemented the five rules more or less independent of each other. The
-result was the following code:
+just implemented the five rules more or less independent of each other.
+
+<!--more-->
+
+The result was the following code:
 
 ``` ruby Original solution, long and ugly
 def score(dice)
