@@ -13,7 +13,7 @@ __Subjectivity__ is used to refer to the condition of being a subject; the quali
 
 __Objectivity__ is the idea that scientists, in attempting to uncover truths about the natural world, must aspire to eliminate personal biases, a priori commitments, emotional involvement, etc [^3].
 
-__Qualitative__ data comes from the word quantity, indicating amount. It is a measure of something, number, size, etc.
+__Quantitative__ data comes from the word quantity, indicating amount. It is a measure of something, number, size, etc.
 
 __Qualitative__ data comes from the word quality. Indicates a description of something. It focuses on the subject's properties, characteristics, features, etc.[^4]
 
