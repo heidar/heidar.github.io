@@ -1,4 +1,4 @@
-### The website for heidar.github.io
+## The website for heidar.github.io
 
 ### Setup
 
@@ -6,7 +6,14 @@
     npm install -g bower gulp
     bower install
     npm install
-    gulp && gulp watch
+
+### Compilation
+
+    gulp
+    gulp watch
+
+### Serve
+
     python -m SimpleHTTPServer
 
 Visit http://localhost:8000
