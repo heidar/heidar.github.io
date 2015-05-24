@@ -59,12 +59,18 @@ gulp.task('images', function() {
     .pipe(gulp.dest('public/img'));
 });
 
+gulp.task('fonts', function() {
+  return gulp.src('bower_components/font-awesome/fonts/**.*')
+    .pipe(gulp.dest('public/fonts'));
+});
 gulp.task('default', ['clean'], function() {
-  gulp.start('templates', 'css', 'js', 'images');
+  gulp.start('templates', 'css', 'js', 'images', 'fonts');
 });
 
 gulp.task('watch', function() {
   gulp.watch('src/*.less', ['css']);
   gulp.watch('src/*.js', ['js']);
+  gulp.watch('src/*.jade', ['templates']);
   gulp.watch('src/images/*', ['images']);
+  gulp.watch('src/fonts/*', ['fonts']);
 });
