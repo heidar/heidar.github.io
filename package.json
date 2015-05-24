@@ -1,0 +1,35 @@
+{
+  "name": "heidar.github.io",
+  "version": "0.0.1",
+  "description": "The website for heidar.github.io",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heidar/heidar.github.io.git"
+  },
+  "author": "Heidar Bernhardsson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heidar/heidar.github.io/issues"
+  },
+  "homepage": "https://github.com/heidar/heidar.github.io",
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "del": "^1.2.0",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.3.0",
+    "gulp-cache": "^0.2.9",
+    "gulp-concat": "^2.5.2",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-jade": "^1.0.1",
+    "gulp-jshint": "^1.11.0",
+    "gulp-less": "^3.0.3",
+    "gulp-minify-css": "^1.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.2.0",
+    "main-bower-files": "^2.8.0"
+  }
+}
