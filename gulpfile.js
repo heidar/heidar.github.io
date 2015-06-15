@@ -56,7 +56,7 @@ gulp.task('images', function() {
       progressive: true,
       interlaced: true
      })))
-    .pipe(gulp.dest('public/img'));
+    .pipe(gulp.dest('public/images'));
 });
 
 gulp.task('fonts', function() {
