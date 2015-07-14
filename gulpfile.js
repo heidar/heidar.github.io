@@ -63,6 +63,7 @@ gulp.task('fonts', function() {
   return gulp.src('bower_components/font-awesome/fonts/**.*')
     .pipe(gulp.dest('public/fonts'));
 });
+
 gulp.task('default', ['clean'], function() {
   gulp.start('templates', 'css', 'js', 'images', 'fonts');
 });
