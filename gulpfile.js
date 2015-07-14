@@ -13,6 +13,7 @@ var gulp           = require('gulp'),
     mainBowerFiles = require('main-bower-files');
 
 gulp.task('clean', function(cb) {
+  cache.clearAll();
   del('public', cb);
 });
 
