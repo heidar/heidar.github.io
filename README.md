@@ -14,9 +14,10 @@
 
 ### Serve
 
+    cd public
     python -m SimpleHTTPServer
 
-Visit http://localhost:8000/public
+Visit http://localhost:8000
 
 ### Deployment
 
