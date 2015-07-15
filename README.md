@@ -21,4 +21,4 @@ Visit http://localhost:8000
 
 ### Deployment
 
-    gulp deploy
+    gulp && gulp deploy
