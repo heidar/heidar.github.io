@@ -10,7 +10,8 @@ var gulp           = require('gulp'),
     concat         = require('gulp-concat'),
     cache          = require('gulp-cache'),
     del            = require('del'),
-    mainBowerFiles = require('main-bower-files');
+    mainBowerFiles = require('main-bower-files'),
+    ghPages        = require('gulp-gh-pages');
 
 gulp.task('clean', function(cb) {
   cache.clearAll();
@@ -75,4 +76,9 @@ gulp.task('watch', function() {
   gulp.watch('src/*.jade', ['templates']);
   gulp.watch('src/images/*', ['images']);
   gulp.watch('src/fonts/*', ['fonts']);
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./public/**/*')
+    .pipe(ghPages({ branch: 'master' }));
 });
