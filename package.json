@@ -32,5 +32,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^1.2.0",
     "main-bower-files": "^2.8.0"
+  },
+  "dependencies": {
+    "gulp-file": "^0.2.0"
   }
 }

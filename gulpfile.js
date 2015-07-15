@@ -11,7 +11,8 @@ var gulp           = require('gulp'),
     cache          = require('gulp-cache'),
     del            = require('del'),
     mainBowerFiles = require('main-bower-files'),
-    ghPages        = require('gulp-gh-pages');
+    ghPages        = require('gulp-gh-pages'),
+    file           = require('gulp-file');
 
 gulp.task('clean', function(cb) {
   cache.clearAll();
@@ -79,6 +80,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('deploy', function() {
-  return gulp.src('./public/**/*')
+  return gulp.src('public/**/*')
+    .pipe(file('CNAME', 'xn--vafrnir-zza3gsb.is'))
     .pipe(ghPages({ branch: 'master' }));
 });
