@@ -1,4 +1,4 @@
-## The website for heidar.github.io
+## The website for vafþrúðnir.is
 
 ### Setup
 
