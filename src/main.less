@@ -3,35 +3,45 @@ html {
 }
 
 body {
-  background: linear-gradient(#93EDC7 10%, #1CD8D2 90%);
-}
-
-.row {
-	text-align: center;
-}
-
-.profile {
-	margin-top: 100px;
-	margin-bottom: 25px;
-	.profile-photo {
-		max-width: 300px;
-		box-shadow: 0px 0px 35px 5px rgba(51,3,0,1);
-	}
-}
-
-.about {
-  margin-bottom: 25px;
-  font-family: 'Lobster', cursive;
+  height: 100%;
+  background-image: url(images/bg.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .icons {
-	a {
-		color: #333;
-		font-size: 28px;
-		padding: 0 6px;
-		&:hover, &:focus {
-			text-decoration: none;
-			outline: none;
-		}
-	}
+  margin-top: 15px;
+  a {
+    color: white;
+    font-size: 28px;
+    padding: 0 8px;
+    &:hover, &:focus {
+      outline: none;
+      text-decoration: none;
+    }
+  }
+}
+
+.profile {
+  margin-bottom: 25px;
+  margin-top: 150px;
+  .profile-photo {
+    box-shadow: 0px 0px 35px 5px black;
+    max-width: 150px;
+  }
+}
+
+.about {
+  span {
+    color: white;
+    font-family: Ubuntu, sans-serif;
+    font-size: 1.9rem;
+    font-weight: 300;
+    line-height: 1.8;
+    a {
+      color: white;
+      font-weight: 700;
+    }
+  }
 }
