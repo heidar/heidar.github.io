@@ -79,7 +79,7 @@ gulp.task('watch', function() {
   gulp.watch('src/fonts/*', ['fonts']);
 });
 
-gulp.task('deploy', ['default'], function() {
+gulp.task('deploy', function() {
   return gulp.src('public/**/*')
     .pipe(file('CNAME', 'xn--vafrnir-zza3gsb.is'))
     .pipe(ghPages({ branch: 'master' }));
