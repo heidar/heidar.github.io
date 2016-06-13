@@ -24,8 +24,18 @@
     "chokidar-cli": "^1.2.0",
     "clean-css": "^3.4.17",
     "flexboxgrid": "^6.3.0",
+    "gh-pages-deploy": "^0.4.2",
     "htmlmin": "0.0.6",
     "imagemin-cli": "^3.0.0",
     "normalize.css": "^4.1.1"
+  },
+  "gh-pages-deploy": {
+    "staticpath": "public",
+    "cname": "xn--vafrnir-zza3gsb.is",
+    "prep": [
+      "build"
+    ],
+    "post": [],
+    "noprompt": true
   }
 }
