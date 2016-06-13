@@ -10,6 +10,8 @@
     "build:html": "htmlmin src/index.html -o public/index.html",
     "build:images": "imagemin src/images/** --out-dir=public/images",
     "clean": "rm -rf public/*",
+    "deploy": "gh-pages-deploy",
+    "clean-source": "rm -rf src/ public/ npm-debug.log node_modules .DS_Store */.DS_Store",
     "watch": "chokidar 'src' -c 'npm run build'"
   },
   "repository": {
@@ -35,7 +37,9 @@
     "prep": [
       "build"
     ],
-    "post": [],
+    "post": [
+      "clean-source"
+    ],
     "noprompt": true
   }
 }
