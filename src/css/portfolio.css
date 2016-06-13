@@ -1,0 +1,42 @@
+.portfolio {
+  padding-top: 12em;
+}
+
+.portfolio__background {
+  background-image: url('../../public/images/bg.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.portfolio__icon {
+  color: #fff;
+  font-size: 3em;
+  text-decoration: none;
+}
+
+.portfolio__icons {
+  margin-top: 0.7em;
+  text-align: center;
+}
+
+.portfolio__photo {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.portfolio__text {
+  color: #fff;
+  line-height: 1.8;
+  margin-top: 0.7em;
+  font-size: 1.8em;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.portfolio__text a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}

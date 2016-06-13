@@ -3,14 +3,15 @@
 ### Setup
 
     brew install nodejs
-    npm install -g bower gulp
-    bower install
     npm install
 
 ### Compilation
 
-    gulp
-    gulp watch
+    npm run build
+
+### Watch (for development)
+
+    npm run watch
 
 ### Serve
 
@@ -21,4 +22,4 @@ Visit http://localhost:8000
 
 ### Deployment
 
-    gulp && gulp deploy
+    npm run deploy
