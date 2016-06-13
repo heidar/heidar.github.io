@@ -11,7 +11,7 @@
     "build:images": "imagemin src/images/** --out-dir=public/images",
     "clean": "rm -rf public/*",
     "deploy": "git checkout -f master && git reset --hard origin/source && npm run build && cp -r public/* . && npm run clean-source && git add -A . && git commit -a -m 'deploy' && git push origin master --force && git checkout source",
-    "clean-source": "rm -rf src/ public/ README.md package.json",
+    "clean-source": "rm -rf src/ public/ README.md package.json .gitignore",
     "watch": "chokidar 'src' -c 'npm run build'"
   },
   "repository": {
