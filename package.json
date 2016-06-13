@@ -10,7 +10,7 @@
     "build:html": "htmlmin src/index.html -o public/index.html",
     "build:images": "imagemin src/images/** --out-dir=public/images",
     "clean": "rm -rf public/*",
-    "deploy": "gh-pages-deploy",
+    "deploy": "git checkout -f master && git reset --hard origin/source && npm run build && cp -r public/* . && npm run clean-source && git add -A . && git commit -a -m 'deploy' && git push origin master --force && git checkout source",
     "clean-source": "rm -rf src/ public/ npm-debug.log node_modules .DS_Store */.DS_Store",
     "watch": "chokidar 'src' -c 'npm run build'"
   },
@@ -26,20 +26,8 @@
     "chokidar-cli": "^1.2.0",
     "clean-css": "^3.4.17",
     "flexboxgrid": "^6.3.0",
-    "gh-pages-deploy": "^0.4.2",
     "htmlmin": "0.0.6",
     "imagemin-cli": "^3.0.0",
     "normalize.css": "^4.1.1"
-  },
-  "gh-pages-deploy": {
-    "staticpath": "public",
-    "cname": "xn--vafrnir-zza3gsb.is",
-    "prep": [
-      "build"
-    ],
-    "post": [
-      "clean-source"
-    ],
-    "noprompt": true
   }
 }
