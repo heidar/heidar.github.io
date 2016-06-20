@@ -4,3 +4,7 @@
 @import "icons.css";
 @import "img.css";
 @import "portfolio.css";
+
+html {
+  height: 100%;
+}
