@@ -23,10 +23,10 @@
   "homepage": "http://xn--vafrnir-zza3gsb.is",
   "devDependencies": {},
   "dependencies": {
-    "chokidar-cli": "^1.2.0",
+    "chokidar-cli": "^1.2.1",
     "clean-css": "^3.4.17",
     "flexboxgrid": "^6.3.0",
-    "htmlmin": "0.0.6",
+    "htmlmin": "0.0.7",
     "imagemin-cli": "^3.0.0",
     "normalize.css": "^4.1.1"
   }
